@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="work.css">
+</head>
+<body>
+    <div class="workbench_card">
+        <div class="head">
+            <img src="pasta-2.png" id="pasta">
+            <img src="save-2.png"><div id="save"></div>
+            <img src="clean.png" >
+            <img src="lupa.png" >
+        </div>
+        <div class="codes">
+            <L><n>1<div class="circ"></div></n> CREATE DEFINER =<c1>`root`@`localhost`</c1> PROCEDURE <c1>`prod`</c1></L><br>
+            
+            <L><n>2</n>(<c1>`nome_prod_sp`</c1> VARCHAR(<c2>100</c2>),</L>
+            <L><n>3</n><c1>`desc_prod_sp`</c1> TEXT(<c2>1000</c2>),</L>
+            <L><n>4</n><c1>`valor_prod_sp`</c1> DOUBLE,</L>
+            <L><n>5</n>OUT <c1>`saida`</c1> VARCHAR(<c2>80</c2>)</L>
+            <L><n>6</n>OUT <c1>`saida_rotulo`</c1> VARCHAR (<c2>80</c2>))</L><br>
+
+            <L><n>7</n>BEGIN</L><br>
+
+                <L><n>8</n><left>INSERT INTO <c3>produto (nome_prod, desc_prod, valor_prod)</c3></left></L>
+                <L><n>9</n><left>VALUES <c3>(nome_prod_sp, desc_prod_sp, valor_prod_sp);</c3></left></L><br>
+
+                <L><n>10</n><left>IF ROW_COUNT <c3>() =</c3> <c2>0</c2> THEN</left></L>
+                <L><n>11</n><left>SET <c3>saida_rotulo = </c3><c2>'ERRO!'';</c2></left></L>
+                <L><n>12</n><left>SET <c3>saida =</c3> <c2>'O produto não foi cadastrado!';</c2></left></L>
+                <L><n>13</n><left>ELSE</L>
+                <L><n>14</n><left>SET <c3>saida_rotulo =</c3><c2> 'Tudo certo!'</c2>;</left></L>
+                <L><n>15</n><left>SET <c3>saida =</c3><c2> 'Produto cadastrado com sucesso!'</c2>;</left></L>
+                <L><n>16</n><left>END IF;</L><br>
+
+            <L><n>17</n>SELECT <c3>saida_rotulo, saida</c3>;</L>
+            <L><n>18</n>END</L>
+        </div>
+    </div>
+</body>
+</html>

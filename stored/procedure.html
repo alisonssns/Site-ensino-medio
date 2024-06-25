@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Procedure</title>
+    <link rel="stylesheet" href="pag.css">
+    <link rel="stylesheet" href="work.css">
+</head><input type="checkbox" id="aumenta">
+<body>
+    <div class="header">
+<div id="ixi">
+        <img src="imgs/logo.png">
+        <p2>TechEase</p2>
+</div>
+<a href="../home.html" class="home">HOME</a>
+    </div>
+    <div class="title">Entenda Stored Procedure</div>
+        <div class="box_code">
+            <label for="aumenta" class="caixa">
+               <div class="box-2">
+               <div class="in"><img src="imgs/bd.png"></div>
+               <div class="text"><p1>Stored Procedure é um recurso SQL, que te possibilita
+                criar uma rotina (um comando  que é executado quando 
+               requerido). Um grande benefício de seu uso é que as
+                informações que serão inseridas no banco de dados fica
+                inacessível aos usuários, o que traz mais segurança e 
+               integridade aos dados.
+               </p1><spam>Clique para ver um exemplo</spam></div></div>
+            </label>
+                   
+            <div class="workbench_card">
+               <div class="head">
+                   <img src="imgs/pasta-2.png" id="pasta">
+                   <img src="imgs/save-2.png"><div id="save"></div>
+                   <img src="imgs/clean.png" >
+                   <img src="imgs/lupa.png" >
+                   <t>Exemplo de uma procedure para inserir usuários</t>
+               </div>
+               <div class="codes">
+                   <L><n>1<div class="circ"></div></n> CREATE DEFINER =<c1>`root`@`localhost`</c1> PROCEDURE <c1>`prod`</c1></L><br>
+                   
+                   <L><n>2</n>(<c1>`nome_prod_sp`</c1> VARCHAR(<c2>100</c2>),</L>
+                   <L><n>3</n><c1>`desc_prod_sp`</c1> TEXT(<c2>1000</c2>),</L>
+                   <L><n>4</n><c1>`valor_prod_sp`</c1> DOUBLE,</L>
+                   <L><n>5</n>OUT <c1>`saida`</c1> VARCHAR(<c2>80</c2>)</L>
+                   <L><n>6</n>OUT <c1>`saida_rotulo`</c1> VARCHAR (<c2>80</c2>))</L><br>
+           
+                   <L><n>7</n>BEGIN</L><br>
+           
+                       <L><n>8</n><left>INSERT INTO <c3>produto (nome_prod, desc_prod, valor_prod)</c3></left></L>
+                       <L><n>9</n><left>VALUES <c3>(nome_prod_sp, desc_prod_sp, valor_prod_sp);</c3></left></L><br>
+           
+                       <L><n>10</n><left>IF ROW_COUNT <c3>() =</c3> <c2>0</c2> THEN</left></L>
+                       <L><n>11</n><left>SET <c3>saida_rotulo = </c3><c2>'ERRO!'';</c2></left></L>
+                       <L><n>12</n><left>SET <c3>saida =</c3> <c2>'O produto não foi cadastrado!';</c2></left></L>
+                       <L><n>13</n><left>ELSE</L>
+                       <L><n>14</n><left>SET <c3>saida_rotulo =</c3><c2> 'Tudo certo!'</c2>;</left></L>
+                       <L><n>15</n><left>SET <c3>saida =</c3><c2> 'Produto cadastrado com sucesso!'</c2>;</left></L>
+                       <L><n>16</n><left>END IF;</L><br>
+           
+                   <L><n>17</n>SELECT <c3>saida_rotulo, saida</c3>;</L>
+                   <L><n>18</n>END</L>
+               </div>
+           </div>
+           </div>
+
+
+<div class="holder">
+<div class="right">
+        <div class="box">
+            <div class="text"><p1> Por que é mais seguro?
+                Seguindo a linha de raciocínio dos bancos, utilizando stored
+                 procedures outras aplicações e usuários não conseguiriam nenhum
+                  tipo de acesso às tabelas do banco de dados de forma direta.
+                Eles poderiam apenas executar os stored procedures, que rodam ações específicas e determinadas pelos DBAs e desenvolvedores.
+                </p1></div>
+            <div class="in"><img src="imgs/bd.png"></div>
+        </div>
+</div>
+        <div class="box">
+            <div class="in"><img src="imgs/bd.png"></div>
+            <div class="text"><p1>Quando utilizar procedures?
+                Quando temos várias aplicações escritas em diferentes linguagens, 
+                ou rodam em plataformas diferentes, porém executam a mesma função.
+                Quando damos prioridade à consistência e segurança.
+                Os bancos (Itaú, Bradesco, Real, etc), por exemplo, em geral,
+                utilizam stored procedures para todas as operações em comum.
+                Os procedimentos podem assegurar que as operações sejam registradas
+                de forma correta e segura.
+                 </p1></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_section">
+        <div class="titles">
+            <p1>CodeEase</p1>
+            <p2>Crie, Inove, Transforme</p2>
+        </div>
+        <div class="btns">
+            <a href="sobre/email.html" class="sobre">Sobre nós</a>
+            <a href="../loja/1 - boas vindas/inicio.html" class="tech">TechEase</a>
+        </div>
+    </div><hr>
+    <div class="copy"><© 2019-2024 TechEase/CodeEase by Alisson & Vagner> <p1>&lt;/©&gt;</p1></div>
+    </div>
+</body>
+<script src="pag.js"></script>
+</html>

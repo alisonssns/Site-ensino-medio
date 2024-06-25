@@ -1,0 +1,91 @@
+.workbench_card{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin-top: 10px;
+    border: 1px solid #007fbf55;
+    border-radius: 5px;
+    background-color: white;
+    font-weight: bold;
+}
+
+.head{
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.194);
+    height: 30px;
+    align-items: center;
+}
+
+.head t{
+    margin-left: 120px;
+    text-align: center;
+    color: #007fbf;
+}
+
+.head img{
+    width: 18px;
+    height: 18px;
+    margin-right: 15px;
+}
+
+#pasta{
+    margin-left: 15px;
+}
+
+#save{
+    border-right:1px solid rgba(0, 0, 0, 0.633);
+    height: 60%;
+    margin-right: 10px;
+}
+
+.codes{
+    display: flex;
+    overflow: scroll;
+    overflow-x: hidden;
+    flex-direction: column;
+    color: #007fbf;
+    margin-left: 20px;
+}
+
+l{
+    display: flex;
+    flex-direction: row;
+}
+
+.circ{
+    height: 7px;
+    position: relative;
+    top: 7px;
+    width: 7px;
+    background-color: #007fbf;
+    border-radius: 100%;
+}
+
+n{
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 20px;
+}
+
+c1{
+    color: #a24b4f;
+    margin-left:4px;
+    margin-right:4px;
+}
+
+c2{
+    color: #d99242;
+    margin-left:4px;
+    margin-right:4px;
+}
+
+c3{
+    color: black;
+    margin-left:4px;
+    margin-right:4px;
+}
+
+left{
+    margin-left: 20px;
+}

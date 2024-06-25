@@ -1,0 +1,110 @@
+.visual_box{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height:290px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #242424;
+}
+
+pp{
+    font-size: 12px;
+}
+
+ex{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: white;
+    width: 78%;
+    height: 100%;
+}
+
+.hist{
+    color: #585e66;
+    font-size: 14px;
+    display: flex;
+    padding-left:5px;
+}
+
+.cima{
+    display: flex;
+    flex-direction: row;
+    border-top-left-radius: 5px;
+}
+
+.cima t{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #302f2f;
+    color: white;
+    height: 35px;
+    width: 160px;
+    border-top-left-radius: 5px;
+    border-top:3px solid #1893f2 ;
+}
+
+.cima img{
+    width: 15px;
+    height: 15px;
+}
+
+.codes{
+    display: flex;
+    flex-direction: column;
+    background-color: #302f2f;
+    color: white;
+    height: 300px;
+    border-bottom-left-radius:5px ;
+    border-bottom-right-radius:5px ;
+}
+
+n{
+    color: #585e66;
+    margin-left: 10px;
+    width: 25px;
+}
+
+l{
+    display: flex;
+    flex-direction: row;
+}
+
+c1{
+    color: #4b84b3;
+}
+
+c2{
+    color: #7fb0ca;
+}
+
+c3{
+    color: white;
+}
+
+c4{
+    color: #a57663;
+}
+
+c5{
+    color: #4dc5ac;
+}
+
+c6{
+    color: #bf82ba;
+}
+
+c7{
+    color: #d3b306;
+}
+
+c8{
+    color: #cbcb9d;
+}
+
+c1,c2, c3, c4, c5, c6, c7, c8{
+    margin: 0px 5px;
+}

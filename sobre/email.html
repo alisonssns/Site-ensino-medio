@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nos.css">
+</head>
+<style>
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    position: absolute;
+    inset: 0;
+    background-image: url(fundo.png);
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    align-items: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p1{
+    font-size: 60px;
+    margin-top: 15%;
+    text-shadow: 5px 5px rgba(255, 255, 255, 0.122);
+}
+
+hr{
+    width: 13%;
+    border-bottom: solid white 5px;
+}
+
+.sobre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+    margin-top: 150px;
+    font-weight: bold;
+}
+
+.aleh, .vag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.aleh:hover,.vag:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+.sobre img{
+    width: 70px;
+}
+
+</style>
+<body>
+    <p1>Quem somos?</p1>
+        <hr>
+        <div class="sobre">
+       <div class="aleh">
+        <a href="https://www.instagram.com/aleh.luis/"><img src="insta.png"></a>
+        <div class="title">Alisson</div>
+       </div>
+       <div class="vag">
+        <a href="https://www.instagram.com/vagner.r.p.j/"><img src="insta.png"></a>
+        <div class="title">Vagner</div>
+       </div></div>
+</body>
+</html>
